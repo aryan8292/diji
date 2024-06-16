@@ -1,1 +1,1 @@
-# AkMasterBot
+# CR Series Bot
