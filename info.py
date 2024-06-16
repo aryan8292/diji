@@ -47,15 +47,15 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 auth_channel = environ.get('AUTH_CHANNEL')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 # Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
-REQ_CHANNEL = environ.get("REQ_CHANNEL", "-1002121697490")
+REQ_CHANNEL = environ.get("REQ_CHANNEL", "-1002163207958")
 REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001506481594'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MM_MalluMoviesGroup2')
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MM_MalluMoviesGroup2')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+_rypDJrBF8hmNjA1')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'CR_movie_group')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/CR_movie_group')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+Mq89b4bqX6cwMWQ1')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
