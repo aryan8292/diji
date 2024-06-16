@@ -28,7 +28,7 @@ DELETE_TIME = int(environ.get('DELETE_TIME', 15))
 BOT_START_TIME = time.time()
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/ad51af5d7b62b176dd4e8.jpg https://telegra.ph/file/337baddb6be47b02ce895.jpg https://telegra.ph/file/78e1de114681234d24c84.jpg https://telegra.ph/file/16aeb75f2aa9f1b4b38ee.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/2d5b3e5615082ca94b286.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1833209093').split()]
