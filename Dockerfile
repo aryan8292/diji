@@ -1,6 +1,8 @@
-FROM python:3.10-alpine
+FROM ubuntu:20.04
 WORKDIR /app
 COPY . /app/
-RUN apk add --no-cache git
-RUN pip install --no-cache-dir -r requirements.txt
+RUN apt-get update && \
+    apt-get install -y git python3 python3-pip && \
+    apt-get clean
+RUN pip3 install --no-cache-dir -r requirements.txt
 CMD ["python3", "bot.py"]
