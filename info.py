@@ -19,10 +19,10 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = "11643051"
 API_HASH = "7dfe39d9cf2054402e5a6c9a9439a610"
-BOT_TOKEN = "7323768509:AAHMEU5SBhVe7sM6gRpuBh0al_t8LarrFjY"
+BOT_TOKEN = ""
 
 #Delete_Time
-DELETE_TIME = int(environ.get('DELETE_TIME', 15))
+DELETE_TIME = int(environ.get('DELETE_TIME', 30))
 
 # Bot settings
 BOT_START_TIME = time.time()
@@ -31,7 +31,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://graph.org/file/2d5b3e5615082ca94b286.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1833209093').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5079629749').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001783681170 -1001762835884 -1001541252886 -1001879702504').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -39,23 +39,23 @@ auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://akautofilter:akautofilter@cluster0.d1r9ary.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Aryan6969:Aryan6969@cluster0.krhmwhe.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'aryan')
 
 # FSUB
 auth_channel = environ.get('AUTH_CHANNEL')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 # Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
-REQ_CHANNEL = environ.get("REQ_CHANNEL", "-1002235232936")
+REQ_CHANNEL = environ.get("REQ_CHANNEL", "-1002347598634")
 REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001506481594'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'CR_movie_group')
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/CR_movie_group')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+Mq89b4bqX6cwMWQ1')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001517345433'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'ary_botz')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/ary_botz')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/ary_botz')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
