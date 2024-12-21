@@ -548,8 +548,8 @@ async def auto_filter(client, msg, spoll=False):
         message = msg
         matrix = msg.text
         settings = await get_settings(message.chat.id)
-        if message.startswith("/") or message.startswith("#"): return  # ignore commands
-        if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", message.text):
+        if message.startswith("/") or message.startswith("#"): return
+            if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", message.text):
             return
         if 2 < len(message.text) < 100:
             search = message.text
