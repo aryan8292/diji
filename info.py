@@ -27,7 +27,7 @@ DELETE_TIME = int(environ.get('DELETE_TIME', 30))
 # Bot settings
 BOT_START_TIME = time.time()
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
+USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 PICS = (environ.get('PICS', 'https://graph.org/file/2d5b3e5615082ca94b286.jpg')).split()
 
 # Admins, Channels & Users
