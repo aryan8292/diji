@@ -3,11 +3,7 @@ class script(object):
 ɪ'ᴍ ᴊᴜsᴛ ᴀ sɪᴍᴘʟᴇ ᴘʀᴇ-ғᴜɴᴄᴛɪᴏɴᴇᴅ ᴀᴜᴛᴏғɪʟᴛᴇʀ ʙᴏᴛ.
 ɪᴛs ᴇᴀsʏ ᴛᴏ ᴜsᴇ ᴍᴇ ; ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀs ᴀᴅᴍɪɴ"""
 
-    ABOUT_TXT = """<b>‣ My Name : {}
-‣ Dᴇᴠᴏʟᴏᴘᴇʀ: <a href='https://t.me/psycho_009'>𝗔𝗞 𝗦𝗘𝗥 ℡ ️️</a>
-‣ Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a>
-‣ Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ 3</a>
-‣ DᴀᴛᴀBᴀsᴇ : <a href='https://www.mongodb.com/'>MᴏɴɢᴏDB</a>"""
+    ABOUT_TXT = """BKL🖕"""
 
 
     STATUS_TXT = """<b>➥ ᴛᴏᴛᴀʟ ғɪʟᴇs: <code>{}</code>
