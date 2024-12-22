@@ -26,7 +26,7 @@ ID - <code>{}</code>
 Nᴀᴍᴇ - {}"""
     
     CAPTION = """
-<a href="{url}">{file_name}</a>
+<a href="https://t.me/+5lTJYFSnCM02OTRl">{file_name}</a>
 """
 
 
