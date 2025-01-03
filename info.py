@@ -39,7 +39,7 @@ auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://unknown4u1082:ZqSpbcQd0oXD1pS0@cluster0.vucwc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://unknown4u1082:YlbrSBmIQfOw5KQ6@cluster0.yj1gt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'aryan')
 
@@ -53,9 +53,9 @@ JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001517345433'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'ary_botz')
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/ary_botz')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/ary_botz')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'mediacrookchat')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/mediacrookchat')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/mediacrookchat')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
